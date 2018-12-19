@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 face_casc = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-img = cv2.imread('ben.jpeg')
+img = cv2.imread('ben.jpg')
 resized=cv2.resize(img,(600,400))
 face = face_casc.detectMultiScale(resized,scaleFactor=1.05,minNeighbors=9)
 for x,y,w,h in face:
